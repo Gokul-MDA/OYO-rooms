@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
+        <title>Oyo</title>
+    </head>
+
+    <body>
+
+        <!-- Header -->
+
+        <div class="header">
+            <a href="description-page.html" class="logo">OYO</a>
+            <div class="header__right-menu">
+                <div class="dropdown">
+                    <button class="dropbtn--lang">Language
+                        <!-- <i class="fa fa-caret-down"></i> -->
+                    </button>
+                    <div class="header dropdown-content">
+                        <a href="#">Tamil</a>
+                        <a href="#">English</a>
+                    </div>
+                </div>
+                <a href="#contact">LogIn/SignUp</a>
+            </div>
+        </div>
+        <!-- #################################################################################################### -->
+
+        <!-- Scroll Navigation Bar -->
+
+        <div id="scroll-navbar">
+            <a href="#">OYO</a>
+            <div class="search__box nav-search">
+                <input type="text" name="text" id="search" placeholder="Search here!">
+                <button type="submit">Search Here</button>
+            </div>
+
+
+        </div>
+
+
+        <script>
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+                    document.getElementById("scroll-navbar").style.top = "0";
+                } else {
+                    document.getElementById("scroll-navbar").style.top = "-100px"
+                }
+            }
+
+        </script>
+
+        <!-- #################################################################################################### -->
+
+        <!-- Navigation Bar for Listing Cities Available -->
+
+        <div class="navbar">
+            <div class="dropdown">
+                <button class="dropbtn">Aruppukottai
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="description-page.html">Link 1</a>
+                    <a href="description-page.html">Link 2</a>
+                    <a href="description-page.html">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Virudhunagar
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="description-page.html">Link 1</a>
+                    <a href="description-page.html">Link 2</a>
+                    <a href="description-page.html">Link 3</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">Sivakasi
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="description-page.html">Link 1</a>
+                    <a href="description-page.html">Link 2</a>
+                    <a href="description-page.html">Link 3</a>
+                </div>
+            </div>
+            <a href="description-page.html" class="right">All Cities</a>
+        </div>
+
+        <!-- #################################################################################################### -->
+
+        <!-- Search Container -->
+
+        <div class="search-container">
+            <h2>World's Fastest Growing Hotel Chain</h2>
+            <div class="search__box">
+                <input type="text" name="text" id="search" placeholder="Search here!">
+                <button type="submit">Search Here....</button>
+            </div>
+            <h3>Continue Search</h3>
+
+        </div></br></br>
+
+        <!-- #################################################################################################### -->
+
+        <!-- Offer Card images -->
+
+        <div class="fakeimg">
+            <a href="https://www.tutorialspoint.com" target="_self">
+                <img src="https://www.pngkey.com/png/full/354-3547815_special-price-png.png" class="center"
+                    alt="Tutorials Point" border="0" />
+            </a></br></br>
+
+        </div>
+
+        <!-- #################################################################################################### -->
+
+        <!-- Alert card for notify -->
+        <div class="alert-card">
+            <div class="alert-box-desc">
+                <h3>Get access to exclusive deals</h3>
+                <p>Only the best deals reach your inbox</p>
+            </div>
+
+            <div class="alert-box">
+                <input type="text" name="text" id="search" placeholder="eg.,your@email.com">
+                <button type="submit">Notify me</button>
+            </div>
+        </div>
+
+        <!-- #################################################################################################### -->
+
+        <!-- Room Suggestion List -->
+
+        <div class="room-suggestion">
+            <h2>Recommended Rooms for you</h2>
+        </div>
+        <div class="room-card">
+            <div class="cards">
+                <div class="card-img">
+                    <img src="images/img-1" alt="hotel">
+                </div>
+                <div class="card-desc">
+                    <h3>Aruppukottai Jeeva Hotel</h3>
+                    <p>Near new Bus stand</p>
+                    <p><B>Price</B><span> Rs.1500</span><del> Rs.2000</del></p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card-img">
+                    <img src="images/img-1" alt="hotel">
+                </div>
+                <div class="card-desc">
+                    <h3>Aruppukottai Jeeva Hotel</h3>
+                    <p>Near new Bus stand</p>
+                    <p><B>Price</B><span> Rs.1500</span><del> Rs.2000</del></p>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card-img">
+                    <img src="images/img-1" alt="hotel">
+                </div>
+                <div class="card-desc">
+                    <h3>Aruppukottai Jeeva Hotel</h3>
+                    <p>Near new Bus stand</p>
+                    <p><B>Price</B><span> Rs.1500</span><del> Rs.2000</del></p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!-- #################################################################################################### -->
+
+    </body>
+    <footer>
+        <div class="footer">
+            <div class="footer__desc">
+                <h2>The World's Fastest Growing Hotel Chain
+                    Join our network and grow your business!</h2>
+            </div>
+            <hr id="hr">
+            <div class="footer__link">
+                <div class="footer__row-link">
+                    <a href="">About</a>
+                    <a href="">Team / Careers</a>
+                    <a href="">Blog</a>
+                    <a href="">Support</a>
+                </div>
+                <div class="footer__col-link">
+                    <a href="">Terms and Conditions</a>
+                    <a href="">Guest Policies</a>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Responsible Disclosure</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</html>

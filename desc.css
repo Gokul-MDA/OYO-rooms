@@ -1,0 +1,183 @@
+/* For all Content */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#break_rule {
+    width: 85%;
+    margin: 25px;
+    color: gray;
+}
+
+/* ############################################################################################# */
+
+/* Scroll Navigation Bar */
+
+#scroll-navbar {
+    background-color: white;
+    position: fixed;
+    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+#scroll-navbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: red;
+}
+
+.nav-search {
+    margin-left: 20%;
+}
+
+.nav-search input {
+    width: 400px;
+    text-align: center;
+    padding: 10px;
+}
+
+.nav-search button {
+    background-color: #58D68D;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+body {
+    display: flex;
+    flex-flow: row;
+}
+
+/* For Fixed Side Bar Contents */
+
+.sidebar {
+    height: 100%;
+    width: 30%;
+    margin-top: 8%;
+}
+
+.sidebar h2 {
+    margin-left: 25px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.price input {
+    width: 70%;
+    margin-left: 25px;
+}
+
+.price h4 {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 25px;
+}
+
+.form-range {
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.form-check-input {
+    margin-top: 10px;
+}
+
+.form-check-label {
+    margin-top: 6px;
+    margin-left: 8px;
+    color: gray;
+}
+
+.filter-type {
+    margin-top: 55px;
+    margin: 25px;
+}
+
+.filter-type p {
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* For Rooms Detailed View */
+
+.cards {
+    display: flex;
+    width: 90%;
+    height: 300px;
+    margin: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.card-img {
+    width: 50%;
+    display: flex;
+    float: left;
+}
+
+.card-img img {
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+.card-desc {
+    margin: 30px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.card-desc h3 {
+    font-size: 28px;
+    font-weight: bold;
+
+}
+
+.card-desc p {
+    margin-top: 40px;
+    font-size: 22px;
+
+
+}
+
+.card-desc span {
+    font-size: 14px;
+    color: red;
+
+}
+
+.room-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8%;
+}
+
+#view-details {
+    border-width: 1px;
+    background-color: #58D68D;
+    color: white;
+    font-weight: bold;
+    float: inline-end;
+    padding: 10px;
+    height: 50px;
+    margin-top: 280px;
+}
