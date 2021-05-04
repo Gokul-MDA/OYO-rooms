@@ -85,7 +85,7 @@ body {
 }
 
 .nav-search button {
-  background-color: green;
+  background-color: #1ab64f
 }
 
 /*button */
@@ -178,11 +178,12 @@ body {
 
 /*Search Box*/
 .search-container {
-  background-color: lightgrey;
+  background: linear-gradient(135.46deg,#d11450, #df293a);
   width: full;
   border: 1px solid lightgrey;
   padding: 20px;
   text-align: center;
+  color: #ddd;
 }
 
 .search__box {
@@ -192,7 +193,7 @@ body {
 .search__box button {
   padding: 18px;
   /* margin-top: 8px; */
-  background: #ddd;
+  background: #1ab64f;
   font-size: 17px;
   border: none;
   cursor: pointer;
@@ -273,7 +274,7 @@ body {
 
 .alert-box input {
   width: 500px;
-  padding: 17px;
+  padding: 10px;
   border-radius: 5px;
   text-align: center;
   margin-left: 40%;
@@ -348,14 +349,14 @@ body {
 .footer {
   padding: 20px;
   text-align: center;
-  background: gray;
+  background: #6d787d;
   color: white;
 }
 
 .footer__link {
   display: flex;
   flex-direction: row;
-  background-color: gray;
+  background-color: #6d787d;
   justify-content: center;
 }
 
