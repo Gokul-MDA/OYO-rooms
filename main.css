@@ -12,7 +12,7 @@ body {
 /* Style the header with a grey background and some padding */
 .header {
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: white;
   padding: 15px;
   /* padding: 20px 10px; */
 }
@@ -24,7 +24,8 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 14px;
+  font-weight: bold;
   line-height: 25px;
   border-radius: 4px;
   font-family: inherit;
@@ -34,21 +35,54 @@ body {
 .header a.logo {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 50px;
-  font-weight: bold;
   font-weight: bolder;
   color: red;
   margin-left: 40px;
 }
 
+.logo a:hover {
+  background-color: white;
+  border-style: solid;
+  border-width: 2px;
+}
+
 /* Change the background color on mouse-over */
 .header a:hover {
+  border-width: 30px;
   background-color: #ddd;
-  color: black;
 }
 
 /* Float the link section to the right */
 .header__right-menu {
   float: right;
+}
+.language-dropdown {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+} 
+
+.language-dropdown a {
+  margin-left: 10px;
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-weight: 500;
+}
+
+.dropdown:hover .language-dropdown {
+  display: block;
+
+}
+
+.language-dropdown a:hover {
+  background-color: #f3f5f7;
 }
 
 #scroll-navbar {
@@ -57,7 +91,7 @@ body {
   top: -50px;
   width: 100%;
   transition: top 0.3s;
-  padding: 20px;
+  padding: 10px;
   display: flex;
   flex-direction: row;
   box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.2);
@@ -72,6 +106,7 @@ body {
   font-weight: bolder;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: red;
+  margin-left: 20px;
 }
 
 .nav-search {
@@ -85,22 +120,35 @@ body {
 }
 
 .nav-search button {
-  background-color: #1ab64f
+  background: #1ab64f;
+}
+
+.nav-search button:hover {
+  background-color: #115f2b;
+
 }
 
 /*button */
 
 .dropbtn--lang {
-  font-size: 20px;
+  line-height: 25px;
+  font-size: 14px;
+  font-weight: bold;
   border: none;
+  color: #292222;
+  background-color:white ;
   padding: 14px 16px;
   font-family: inherit;
+  cursor: pointer;
+}
+
+.dropbtn--lang :hover {
+  background-color: gray;
 }
 
 .navbar {
   overflow: hidden;
-  background-color: white;
-  margin-left: 40px;
+  background-color: #f3f5f7;
   border-top: 1px;
 }
 
@@ -128,7 +176,8 @@ body {
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
-  margin: 0;
+  margin-left: 48px;
+  cursor: pointer;
 }
 
 /* .navbar a:hover, .dropdown:hover .dropbtn {
@@ -138,13 +187,20 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f2f2f2;
-  min-width: 160px;
+  background-color: white;
+  margin-left: 48px;
+  min-width: 260px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-
+.dropdown-content p {
+  margin-left: 22px;
+  margin-top: 23px;
+  font-weight: 600;
+  color: #292222;
+}
 .dropdown-content a {
+  margin-left: 10px;
   float: none;
   color: black;
   padding: 12px 16px;
@@ -154,7 +210,7 @@ body {
 }
 
 .dropdown-content a:hover {
-  background-color: #ddd;
+  color: red;
 }
 
 .dropdown:hover .dropdown-content {
@@ -178,12 +234,10 @@ body {
 
 /*Search Box*/
 .search-container {
-  background: linear-gradient(135.46deg,#d11450, #df293a);
-  width: full;
-  border: 1px solid lightgrey;
-  padding: 20px;
+  background: linear-gradient(135.46deg, #d11450, #df293a);
+  color: white;
+  padding: 30px;
   text-align: center;
-  color: #ddd;
 }
 
 .search__box {
@@ -192,19 +246,24 @@ body {
 
 .search__box button {
   padding: 18px;
-  /* margin-top: 8px; */
+  width: 140px;
+  color: white;
   background: #1ab64f;
   font-size: 17px;
+  font-weight: bold;
   border: none;
   cursor: pointer;
 }
 
+.search__box button:hover {
+  background-color: #115f2b;
+}
 .search-container input[type=text] {
   text-align: center;
   width: 40%;
   padding: 12px;
   font-size: 17px;
-  border: none;
+  border-width: 1px;
   margin-left: 25%;
 }
 
@@ -231,9 +290,11 @@ body {
 .alert-card {
   display: flex;
   flex-direction: row;
-  box-shadow: 0px 2px 4px rgb(0, 0, 0, 25%);
+  border-style: solid;
+  border-color: #e0e0e0;
+  border-width: 1px;
   width: 90%;
-  height: 30%;
+  height: 20%;
   margin: 25px;
   margin-left: auto;
   margin-right: auto;
@@ -253,16 +314,16 @@ body {
 }
 
 .alert-box {
-  padding: 30px;
+  padding: 45px;
   display: flex;
   flex-flow: row;
 }
 
 .alert-box button {
   margin-left: 10px;
-  padding: 15px;
+  padding: 12px;
   width: 200px;
-  background-color: red;
+  background-color: #ee2a24;
   border-radius: 5px;
   color: white;
   font-size: 14px;
@@ -270,20 +331,23 @@ body {
   font-weight: bold;
   cursor: pointer;
   margin-right: 50px;
+  border: none;
 }
 
 .alert-box input {
   width: 500px;
-  padding: 10px;
+  padding: 15px;
   border-radius: 5px;
   text-align: center;
   margin-left: 40%;
   font-size: 14px;
   font-weight: bold;
+  border-color: #e0e0e0;
+  border-width: 1px;
   font-family: sans-serif;
 }
 
-.suggestion {
+/* .suggestion {
   border-radius: 0;
   height: 128px;
   width: 172px;
@@ -342,7 +406,64 @@ body {
 .card-desc span {
   font-size: 14px;
   color: red;
+} */
+
+.map__widget {
+  background-color: #f3f5f7;
+  display: flex;
 }
+.map-bg {
+  margin-top: 60px;
+  background-image: url("/images/map-widget.jpg");
+  background-repeat: no-repeat;
+  min-width: 100%;
+  min-height: 500px;
+} 
+.map-desc {
+  margin-left: 54%;
+  color: #292222;
+}
+
+.map-desc h1 {
+  font-size: 28px;
+  font-family: sans-serif;
+  color: #292222;
+}
+
+.map-desc p {
+  color: #48494a;
+  font-weight: 400;
+}
+
+.numbers {
+  display: flex;
+}
+.bold-number1 {
+  font-size: 22px;
+  color: #292222;
+}
+
+.bold-numbers {
+  font-size: 22px;
+  margin-left: 70px;
+  color: #292222;
+}
+.type {
+  margin-left: 70px;
+  color: #48494a;
+}
+
+.country-list {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-row-gap: 40px;
+}
+.country {
+  text-decoration: none;
+  color: #48494a;
+}
+
 
 /* Footer */
 
@@ -356,7 +477,6 @@ body {
 .footer__link {
   display: flex;
   flex-direction: row;
-  background-color: #6d787d;
   justify-content: center;
 }
 
