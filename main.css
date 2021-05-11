@@ -451,6 +451,9 @@ body {
   font-size: 22px;
   color: #292222;
 }
+.type1 {
+  margin-top: -25px;
+}
 
 .bold-numbers {
   font-size: 22px;
@@ -458,6 +461,7 @@ body {
   color: #292222;
 }
 .type {
+  margin-top: -25px;
   margin-left: 70px;
   color: #48494a;
 }
