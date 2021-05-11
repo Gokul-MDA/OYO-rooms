@@ -13,7 +13,6 @@ body {
 .header {
   overflow: hidden;
   background-color: white;
-  padding: 15px;
   /* padding: 20px 10px; */
 }
 
@@ -22,14 +21,19 @@ body {
   float: left;
   color: rgb(48, 48, 48);
   text-align: center;
-  padding: 14px 16px;
+  padding: 20px 18px;
   text-decoration: none;
   font-size: 14px;
   font-weight: bold;
   line-height: 25px;
-  border-radius: 4px;
   font-family: inherit;
 }
+
+.auth {
+  margin-left: 10px;
+}
+
+
 
 /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
 .header a.logo {
@@ -40,21 +44,40 @@ body {
   margin-left: 40px;
 }
 
-.logo a:hover {
-  background-color: white;
-  border-style: solid;
-  border-width: 2px;
-}
+
 
 /* Change the background color on mouse-over */
 .header a:hover {
-  border-width: 30px;
-  background-color: #ddd;
+  background-color: #f3f5f7;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e0e0e0;
 }
-
 /* Float the link section to the right */
 .header__right-menu {
   float: right;
+}
+
+/*button */
+
+.dropbtn--lang {
+  line-height: 25px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  color: #292222;
+  background-color:white ;
+  padding: 20px 18px;
+  font-family: inherit;
+  cursor: pointer;
+  border-style: solid;
+  border-color: #e0e0e0;
+  border-width: 1px;
+}
+
+.dropbtn--lang:hover {
+  background-color: #f3f5f7;
+  border-style: solid;
 }
 .language-dropdown {
   display: none;
@@ -82,7 +105,9 @@ body {
 }
 
 .language-dropdown a:hover {
-  background-color: #f3f5f7;
+  border: none;
+  background-color: white;
+  color: red;
 }
 
 #scroll-navbar {
@@ -128,23 +153,7 @@ body {
 
 }
 
-/*button */
 
-.dropbtn--lang {
-  line-height: 25px;
-  font-size: 14px;
-  font-weight: bold;
-  border: none;
-  color: #292222;
-  background-color:white ;
-  padding: 14px 16px;
-  font-family: inherit;
-  cursor: pointer;
-}
-
-.dropbtn--lang :hover {
-  background-color: gray;
-}
 
 .navbar {
   overflow: hidden;
